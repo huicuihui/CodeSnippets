@@ -3,29 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>HHLineView</string>
+	<string>hhPragmaMark</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    //分割线
-    UIView *lineView = [[UIView alloc]init];
-    [self.contentView addSubview:lineView];
-    [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(0);
-        make.right.mas_equalTo(0);
-        make.bottom.mas_equalTo(0);
-        make.height.mas_equalTo(1.0);
-    }];</string>
+	<string>#pragma mark - </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>47FB5C62-2D0C-4491-A832-43DC09985EE6</string>
+	<string>1D74E504-5DB9-4321-9008-CAAB43CE020D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>HHLineView</string>
+	<string>hhPragmaMark</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>HHLineView</string>
+	<string>hhPragmaMark</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

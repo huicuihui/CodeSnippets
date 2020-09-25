@@ -3,29 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>HHLineView</string>
+	<string>hhViewCorner</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    //分割线
-    UIView *lineView = [[UIView alloc]init];
-    [self.contentView addSubview:lineView];
-    [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(0);
-        make.right.mas_equalTo(0);
-        make.bottom.mas_equalTo(0);
-        make.height.mas_equalTo(1.0);
-    }];</string>
+	<string>    //给view设置圆角
+    UIView *view = &lt;#view#&gt;;
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:view.bounds byRoundingCorners:(UIRectCornerTopLeft | UIRectCornerTopRight) cornerRadii:CGSizeMake(10, 10)];//圆角大小
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = view.bounds;
+    maskLayer.path = maskPath.CGPath;
+    view.layer.masksToBounds = YES;
+    view.layer.mask = maskLayer;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>47FB5C62-2D0C-4491-A832-43DC09985EE6</string>
+	<string>00192157-7E8A-428E-B152-896A91CD78B4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>HHLineView</string>
+	<string>hhViewCorner</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>HHLineView</string>
+	<string>hhViewCorner</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
