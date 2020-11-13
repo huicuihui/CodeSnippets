@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>hhButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.backgroundColor = [UIColor whiteColor];
+    button.layer.masksToBounds = YES;
+    button.layer.cornerRadius = 20.0;
+    button.layer.borderColor = [UIColor blueColor].CGColor;
+    button.layer.borderWidth = 1.0;
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [button setTitle:@"" forState:UIControlStateNormal];
+    [self.view addSubview:button];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6F6110EB-90BD-487A-BB69-F16CDC0247B6</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>hhButton</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>hhButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
